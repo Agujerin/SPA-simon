@@ -262,7 +262,7 @@ body {
     text-align: justify;
 }
 
-.rank-list li {
+.rank-list-item {
     padding: .5em;
     margin-bottom: .5em;
     border-radius: .6em;

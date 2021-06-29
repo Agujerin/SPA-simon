@@ -12,9 +12,11 @@ const rankingUpdate =(RankList)=>{
     if (rank.length>10) rank.pop()
     
     const fragment = document.createDocumentFragment()
+    
         for (let i = 0; i < rank.length; i++) {
             const listItem = document.createElement('LI')
-            listItem.textContent = `${rank[i].name} - ${rank[i].points} puntos - ${rank[i].date}`;
+            listItem.classList.add("rank-list-item")
+            listItem.textContent = `${(rank[i].name).toUpperCase()} - ${rank[i].points} puntos - ${rank[i].date}`;
             fragment.appendChild(listItem)
         }
     RankList.appendChild(fragment)
